@@ -47,4 +47,10 @@ public class StringCalculaterTest {
 		        StringCalculater calculator = new StringCalculater();
 		        assertEquals(3, calculator.calculater("3+(6-(8+2))+4"));
 		    }
+		  
+		  @Test
+		    public void testExpressionWithZero() {
+		        StringCalculater calculator = new StringCalculater();
+		        assertEquals(-1, calculator.calculater("0+1-2"));
+		    }
 }
