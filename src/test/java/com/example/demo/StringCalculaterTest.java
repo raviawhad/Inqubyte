@@ -29,4 +29,10 @@ public class StringCalculaterTest {
 		        StringCalculater calculator = new StringCalculater();
 		        assertEquals(23, calculator.calculater("(1+(4+5+2)-3)+(6+8)"));
 		    }
+		  
+		  @Test
+		    public void testLeadingNegativeSign() {
+		        StringCalculater calculator = new StringCalculater();
+		        assertEquals(-3, calculator.calculater("-5+2"));
+		    }
 }
