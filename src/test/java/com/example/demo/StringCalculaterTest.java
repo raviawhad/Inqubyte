@@ -35,4 +35,10 @@ public class StringCalculaterTest {
 		        StringCalculater calculator = new StringCalculater();
 		        assertEquals(-3, calculator.calculater("-5+2"));
 		    }
+		  
+		  @Test
+		    public void testMultipleOperationsAndParentheses() {
+		        StringCalculater calculator = new StringCalculater();
+		        assertEquals(9, calculator.calculater("((2+3)-(4-1)+7)"));
+		    }
 }
