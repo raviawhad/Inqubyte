@@ -41,4 +41,10 @@ public class StringCalculaterTest {
 		        StringCalculater calculator = new StringCalculater();
 		        assertEquals(9, calculator.calculater("((2+3)-(4-1)+7)"));
 		    }
+		  
+		  @Test
+		    public void testComplexExpression() {
+		        StringCalculater calculator = new StringCalculater();
+		        assertEquals(3, calculator.calculater("3+(6-(8+2))+4"));
+		    }
 }
