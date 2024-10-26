@@ -23,4 +23,10 @@ public class StringCalculaterTest {
 		        StringCalculater calculator = new StringCalculater();
 		        assertEquals(6, calculator.calculater("(3+5)-2"));
 		    }
+		 
+		  @Test
+		    public void testNestedParentheses() {
+		        StringCalculater calculator = new StringCalculater();
+		        assertEquals(23, calculator.calculater("(1+(4+5+2)-3)+(6+8)"));
+		    }
 }
