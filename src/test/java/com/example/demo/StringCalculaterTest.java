@@ -17,4 +17,10 @@ public class StringCalculaterTest {
 		        StringCalculater calculator = new StringCalculater();
 		        assertEquals(25, calculator.calculater("10+20-5"));
 		    }
+		 
+		 @Test
+		    public void testExpressionWithParentheses() {
+		        StringCalculater calculator = new StringCalculater();
+		        assertEquals(6, calculator.calculater("(3+5)-2"));
+		    }
 }
